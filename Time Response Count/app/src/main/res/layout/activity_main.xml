@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:clickable="false"
+        android:ems="10"
+        android:gravity="top|center"
+        android:inputType="textPersonName"
+        android:text="COMP 7920-A1"
+        android:textColor="#3F51B5"
+        android:textColorHighlight="@color/purple_200"
+        android:textColorLink="#2196F3"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="539dp"
+        android:layout_height="349dp"
+        android:clickable="false"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="We are studying Fitts' Law, a model of human motor response developed by Paul Fitts in 1954. Fitts' Law has been applied by Human Factors and Ergonomics engineers to thousands of designs ranging from assembly lines to computer interfaces. Since Fitts' model is so influential, it is important to verify its accuracy and to consider alternative models. We've developed an android application which is an interactive experiment that allows to see the throughput of the Thumb and Index finger. In this experiment, you’re require to spare 3 minutes to click on 180 target points using your Thumb and Index Finger. First please input your AGE and GENDER and select NEXT "
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Enter Your Age:"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/Edittext_Age_Main"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:padding="5dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Select Your Gender"
+        android:textSize="20dp"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_male_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALE"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_female_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FEMALE"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/Button_Start_Main"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        />
+
+
+</LinearLayout>

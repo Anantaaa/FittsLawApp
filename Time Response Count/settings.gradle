@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "FInger Response Timer Record"

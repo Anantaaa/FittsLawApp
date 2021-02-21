@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FInger Response Timer Record</string>
+    <string name="button_text1">Button One</string>
+    <string name="button_text2">Button Two</string>
+</resources>
